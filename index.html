@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <title>Mi página</title>
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Lucía Alfonso García">
 
     <!-- mobile specific metas
    ================================================== -->
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/wallpaper.scss">
 
     <!-- script
    ================================================== -->
@@ -41,28 +42,6 @@
    ================================================== -->
     <header>
         <div class="row">
-
-            <div class="top-bar">
-                <a class="menu-toggle" href="#"><span>Menu</span></a>
-
-                <div class="logo">
-                    <a href="index.html">Lucía</a>
-                </div>
-
-                <nav id="main-nav-wrap">
-                    <ul class="main-navigation">
-                        <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-                        <li><a class="smoothscroll" href="#about" title="">About</a></li>
-                        <li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
-                        <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-                        <li><a class="smoothscroll" href="#services" title="">Services</a></li>
-                        <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-                        <li><a href="styles.html" title="">Style Demo</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- /top-bar -->
-
         </div>
         <!-- /row -->
     </header>
@@ -71,37 +50,33 @@
     <!-- intro section
    ================================================== -->
     <section id="intro">
-
-        <div class="intro-overlay"></div>
-
+        <div class="intro-overlay">
+            <div class="background-container">
+                <div class="stars"></div>
+                <div class="twinkling"></div>
+                <div class="clouds"></div>
+            </div>
+        </div>
         <div class="intro-content">
             <div class="row">
-
                 <div class="col-twelve">
-
                     <h5>Hello, World.</h5>
                     <h1>Soy Lucía Alfonso.</h1>
-
                     <p class="intro-position">
                         <span>Ingeniería Informática</span>
                         <span>Tecnología de la Información</span>
                     </p>
-
                     <a class="button stroke smoothscroll" href="#about" title="">Sobre mí</a>
-
                 </div>
-
             </div>
         </div>
         <!-- /intro-content -->
-
         <ul class="intro-social">
             <li><a href="https://github.com/luciaagarcia"><i class="fa fa-github"></i></a></li>
             <li><a href="https://twitter.com/lucia_agarcia"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/lucia_agarcia/"><i class="fa fa-instagram"></i></a></li>
         </ul>
         <!-- /intro-social -->
-
     </section>
     <!-- /intro -->
 
@@ -109,31 +84,23 @@
     <!-- about section
    ================================================== -->
     <section id="about">
-
         <div class="row section-intro">
             <div class="col-twelve">
-
                 <h5>Sobre mí</h5>
                 <h1>Una breve introducción</h1>
-
                 <div class="intro-info">
-
                     <img src="images/profile.jpg" alt="Profile Picture">
 
                     <p class="lead">Estudiante de último curso de Ingeniería Informática (TI) en la Escuela Superior de Informática (UCLM - CR).</p>
                 </div>
-
             </div>
         </div>
         <!-- /section-intro -->
 
         <div class="row about-content">
-
             <div class="col-six tab-full">
-
                 <h3>Perfil</h3>
                 <p>Soy una persona proactiva, siempre dispuesta a ayudar en lo que pueda.</p>
-
                 <ul class="info-list">
                     <li>
                         <strong>Nombre:</strong>
@@ -151,23 +118,18 @@
 				-->
                     <li>
                         <strong>Página web:</strong>
-                        <span>www.kardswebsite.com</span>
+                        <span>www.luciaagarcia.github.io</span>
                     </li>
                     <li>
                         <strong>Email:</strong>
                         <span>lucia.crista.97@hotmail.com</span>
                     </li>
-
                 </ul>
                 <!-- /info-list -->
-
             </div>
-
             <div class="col-six tab-full">
-
                 <h3>Habilidades</h3>
-                <p>Me gusta el desarrollo front-end, sobretodo en móvil. Intentando aprender poco a poco sobre web. </p>
-
+                <p>Me gusta el desarrollo front-end, sobretodo en móvil. Intentando aprender poco a poco sobre lenguajes web. </p>
                 <ul class="skill-bars">
                     <li>
                         <div class="progress percent70"><span>70%</span></div>
@@ -191,18 +153,14 @@
                     </li>
                 </ul>
                 <!-- /skill-bars -->
-
             </div>
-
         </div>
-
         <div class="row button-section">
             <div class="col-twelve">
-                <a href="#contact" title="¡Háblame!" class="button stroke smoothscroll">¡Háblame!</a>
+                <a href="#contacto" title="¡Háblame!" class="button stroke smoothscroll">¡Háblame!</a>
                 <a href="#" title="Descargar CV" class="button button-primary">Descargar CV</a>
             </div>
         </div>
-
     </section>
     <!-- /process-->
 
@@ -210,69 +168,52 @@
     <!-- resume Section
    ================================================== -->
     <section id="resume" class="grey-section">
-
         <div class="row section-intro">
             <div class="col-twelve">
-
-                <h5>Resume</h5>
+                <h5>Resumen</h5>
                 <h1>Más información sobre mí</h1>
-
-                <p class="lead">Aquí podréis encontrar algo de información sobre los proyectos que he realizado, estudios o distintas tareas que he realizado
+                <p class="lead">Aquí podréis encontrar algo de información sobre los proyectos, estudios o distintas tareas que he realizado
                 </p>
-
             </div>
         </div>
         <!-- /section-intro-->
 
         <div class="row resume-timeline">
-
             <div class="col-twelve resume-header">
-
                 <h2>Experiencia laboral</h2>
-
             </div>
             <!-- /resume-header -->
 
             <div class="col-twelve">
-
                 <div class="timeline-wrap">
-
                     <div class="timeline-block">
-
                         <div class="timeline-ico">
                             <i class="fa fa-briefcase"></i>
                         </div>
-
                         <div class="timeline-header">
                             <h3>Becaria "Soporte técnico en la imagen digital y redes sociales"</h3>
                             <p>Marzo 2019 - Actualidad</p>
                         </div>
-
                         <div class="timeline-content">
                             <h4>Escuela Superior de Informática (UCLM - CR)</h4>
                             <p>Encargada de gestionar distintas redes sociales y crear contenido para mejorar la visibilidad de la Escuela de cara al exterior, e informar de los distintos eventos que se realizan.</p>
                         </div>
-
                     </div>
                     <!-- /timeline-block -->
 
                     <div class="timeline-block">
-
                         <div class="timeline-ico">
                             <i class="fa fa-briefcase"></i>
                         </div>
-
                         <div class="timeline-header">
                             <h3>Monitora "Escuelas de verano 2018"</h3>
                             <p>Junio 2018 - Julio 2018</p>
                             <p>Junio 2017 - Julio 2017</p>
                         </div>
-
                         <div class="timeline-content">
                             <h4>Fundación UCLM</h4>
                             <p>Responsable de impartir clases de introducción a la robotica y la programación a niños de primaria (desde 3º hasta 6º)</p>
                         </div>
-
                     </div>
                     <!-- /timeline-block -->
 
@@ -286,56 +227,42 @@
         <!-- /resume-timeline -->
 
         <div class="row resume-timeline">
-
             <div class="col-twelve resume-header">
-
                 <h2>Educación</h2>
-
             </div>
             <!-- /resume-header -->
 
             <div class="col-twelve">
-
                 <div class="timeline-wrap">
-
                     <div class="timeline-block">
-
                         <div class="timeline-ico">
                             <i class="fa fa-graduation-cap"></i>
                         </div>
-
                         <div class="timeline-header">
                             <h3>Grado en Ingeniería Informática</h3>
                             <p>2016 - Actualidad</p>
                         </div>
-
                         <div class="timeline-content">
                             <h4>Universidad de Castilla La Mancha (Ciudad Real)</h4>
                             <p>Intensificación de Tecnologías de la Información</p>
                         </div>
-
                     </div>
                     <!-- /timeline-block -->
 
                     <div class="timeline-block">
-
                         <div class="timeline-ico">
                             <i class="fa fa-graduation-cap"></i>
                         </div>
-
                         <div class="timeline-header">
                             <h3>Curso de Inmersión Lingüística</h3>
                             <p>2016 </p>
                         </div>
-
                         <div class="timeline-content">
                             <h4>Universidad Internacional Menéndez Pelayo</h4>
                             <p>Curso de 30 horas para potenciar las habilidades (sobretodo la destreza oral) en la lengua inglesa.</p>
                         </div>
-
                     </div>
                     <!-- /timeline-block -->
-
 
                 </div>
                 <!-- /timeline-wrap -->
@@ -345,34 +272,90 @@
 
         </div>
         <!-- /resume-timeline -->
+
+        <div class="row resume-timeline">
+            <div class="col-twelve resume-header">
+                <h2>Voluntariado</h2>
+            </div>
+            <!-- /resume-header -->
+
+            <div class="col-twelve">
+                <div class="timeline-wrap">
+                    <div class="timeline-block">
+                        <div class="timeline-ico">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="timeline-header">
+                            <h3>Delegada de centro</h3>
+                            <p>2019 - 2020</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Escuela Superior de Informática (UCLM - CR)</h4>
+                            <p>Organización de actividades y resolución de problemas entre profesores y estudiantes</p>
+                        </div>
+                    </div>
+                    <!-- /timeline-block -->
+                    <div class="col-twelve">
+                        <div class="timeline-wrap">
+                            <div class="timeline-block">
+                                <div class="timeline-ico">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <div class="timeline-header">
+                                    <h3>Delegada de curso</h3>
+                                    <p>2017 - 2020</p>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Delegación de Alumnos (ESI - CR)</h4>
+                                    <p>Organización de actividades y resolución de problemas entre profesores y estudiantes</p>
+                                </div>
+                            </div>
+                            <!-- /timeline-block -->
+                            <div class="col-twelve">
+                                <div class="timeline-wrap">
+                                    <div class="timeline-block">
+                                        <div class="timeline-ico">
+                                            <i class="fa fa-heart"></i>
+                                        </div>
+                                        <div class="timeline-header">
+                                            <h3>1ª Semana de Visión por computador</h3>
+                                            <p>2017</p>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>VisiónCR</h4>
+                                            <p>Participación en la organización de las actividades, con la intención de acercar la visión por computador al público general</p>
+                                        </div>
+                                    </div>
+                                    <!-- /timeline-block -->
+                                </div>
+                                <!-- /timeline-wrap -->
+
+                            </div>
+                            <!-- /col-twelve -->
+
+                        </div>
+                        <!-- /resume-timeline -->
 
     </section>
     <!-- /features -->
 
     <!-- contact
    ================================================== -->
-    <section id="contact">
-
+    <section id="contacto">
         <div class="row section-intro">
             <div class="col-twelve">
-
-                <h5>Contact</h5>
+                <h5>Contacto</h5>
                 <h1>¡Deseando oir noticias tuyas!</h1>
-
                 <p class="lead">Puedes contactar conmigo para cualquier duda que tengas.</p>
-
             </div>
         </div>
         <!-- /section-intro -->
 
         <div class="row contact-form">
-
             <div class="col-twelve">
-
                 <!-- form -->
                 <form name="contactForm" id="contactForm" method="post" action="">
                     <fieldset>
-
                         <div class="form-field">
                             <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
                         </div>
@@ -396,7 +379,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </fieldset>
                 </form>
                 <!-- Form End -->
@@ -416,45 +398,31 @@
         <!-- /contact-form -->
 
         <div class="row contact-info">
-
             <div class="col-four tab-full">
-
                 <div class="icon">
                     <i class="icon-pin"></i>
                 </div>
-
                 <h5>Dónde encontrarme</h5>
-
                 <p>
                     Ciudad Real<br> Castilla La Mancha<br>
                 </p>
-
             </div>
-
             <div class="col-four tab-full collapse">
-
                 <div class="icon">
                     <i class="icon-mail"></i>
                 </div>
-
                 <h5>Email</h5>
-
                 <p>lucia.crista.97@hotmail.com<br> lucia.alfonso@alu.uclm.es
                 </p>
-
             </div>
 
             <div class="col-four tab-full">
-
                 <div class="icon">
                     <i class="icon-phone"></i>
                 </div>
-
                 <h5>Llámame</h5>
-
                 <p>(+34) 622 11 66 45<br>
                 </p>
-
             </div>
 
         </div>
@@ -469,28 +437,22 @@
 
     <footer>
         <div class="row">
-
             <div class="col-six tab-full pull-right social">
-
                 <ul class="footer-social">
                     <li><a href="https://github.com/luciaagarcia"><i class="fa fa-github"></i></a></li>
                     <li><a href="https://twitter.com/lucia_agarcia"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://www.instagram.com/lucia_agarcia/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-
             </div>
-
             <div class="col-six tab-full">
                 <div class="copyright">
                     <span>© Copyright Kards 2016.</span>
                     <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
                 </div>
             </div>
-
             <div id="go-top">
                 <a class="smoothscroll" title="Inicio" href="#top"><i class="fa fa-long-arrow-up"></i></a>
             </div>
-
         </div>
         <!-- /row -->
     </footer>
