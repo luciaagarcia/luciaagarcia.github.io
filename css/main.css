@@ -1761,11 +1761,13 @@ header .logo a {
  * responsive:
  * Intro
  * --------------------------------------------------------------- 
- */
+    float: initial;
+    transform: rotate(-30deg);
+}
 
-@media only screen and (max-width:1024px) {
-    .intro-content h1 {
-        font-size: 7.6rem;
+.intro-info .lead {
+    text-align: initial;
+
     }
     .intro-social {
         font-size: 3rem;
@@ -1854,12 +1856,12 @@ header .logo a {
     width: 13rem;
     border-radius: 50%;
     margin: 0 0 0 0;
-    float: initial;
+    float: inline-start;
     transform: rotate(-30deg);
 }
 
 .intro-info .lead {
-    text-align: initial;
+    text-align: justify;
     padding-left: 13rem;
     margin-left: -100px;
     margin-top: 20px;
