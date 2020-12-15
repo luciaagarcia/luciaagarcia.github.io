@@ -406,9 +406,11 @@ textarea {
  */
 
 .row {
-    width: 94%;
+    width: 89%;
     max-width: 1140px;
     margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .row:before,
