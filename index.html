@@ -35,14 +35,27 @@
 </head>
 
 <body id="top">
-    <!-- header 
-   ================================================== -->
-    <header>
-        <div class="row"></div>
-        <!-- /row -->
-    </header>
-    <!-- /header -->
+    <!-- header
+    ================================================== -->
+    <header class="s-header sticky offset scrolling">
 
+        <div class="s-header__content">
+
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li><a class="smoothscroll" href="#intro" title="Home">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="Sobre mí">Sobre mí</a></li>
+                    <li><a class="smoothscroll" href="#resume" title="Currículum">Currículum</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="Portfolio">Portfolio</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="Contacto">Contacto</a></li>
+
+                </ul>
+            </nav>
+            <!-- end s-header__nav-wrap -->
+        </div>
+        <!-- end header-content -->
+    </header>
+    <!-- end s-header -->
     <!-- intro section
    ================================================== -->
     <section id="intro">
@@ -100,11 +113,12 @@
             <div class="col-twelve">
                 <h5>Sobre mí</h5>
                 <h1>Una breve introducción</h1>
+
                 <div class="intro-info">
                     <img src="images/profile.jpg" alt="Profile Picture" />
+                    <br>
 
                     <p class="lead">
-                        Estudiante de último curso de Ingeniería Informática (TI) en la Escuela Superior de Informática (UCLM - CR).
                     </p>
                 </div>
             </div>
@@ -114,25 +128,22 @@
         <div class="row about-content">
             <div class="col-six tab-full">
                 <h3>Perfil</h3>
-                <p>
-                    Soy una persona muy trabajadora que siempre está dispuesta a ayudar. Tengo una gran capacidad de liderazgo y de organización, lo que me ha proporcionado bastante responsabilidad frente a los proyectos que se me ponen delante. Siempre saco un punto de
-                    vista distinto de los problemas.
+                <p>Soy una persona muy trabajadora que siempre está dispuesta a ayudar. Tengo una gran capacidad de liderazgo y de organización, lo que me ha proporcionado bastante responsabilidad frente a los proyectos que se me ponen delante. Siempre saco
+                    un punto de vista distinto de los problemas.
                 </p>
                 <ul class="info-list">
+                    <li>
+
+
+                    </li>
                     <li>
                         <strong>Nombre:</strong>
                         <span>Lucía Alfonso García</span>
                     </li>
                     <li>
-                        <strong>Fecha de nacimiento</strong>
+                        <strong>Fecha de nacimiento:</strong>
                         <span>25 de octubre de 1997</span>
                     </li>
-                    <!--
-					<li>
-						<strong>Job:</strong>
-						<span>En b</span>
-					</li>
-				-->
                     <li>
                         <strong>Página web:</strong>
                         <span>luciaagarcia.github.io</span>
@@ -141,38 +152,122 @@
                         <strong>Email:</strong>
                         <span>lucia.alfgarcia@gmail.com</span>
                     </li>
+
                 </ul>
                 <!-- /info-list -->
             </div>
             <div class="col-six tab-full">
-                <h3>Competencias</h3>
-                <p>
-                    Me gusta el desarrollo front-end, sobretodo en móvil. Intentando aprender poco a poco sobre lenguajes web.
-                </p>
+                <h3>Habilidades</h3>
                 <ul class="skill-bars">
                     <li>
-                        <div class="progress percent70"><span>70%</span></div>
-                        <strong>java</strong>
+                        <strong>Creatividad</strong>
                     </li>
                     <li>
-                        <div class="progress percent75"><span>75%</span></div>
-                        <strong>Flutter</strong>
+                        <strong>Ganas de aprender</strong>
                     </li>
                     <li>
-                        <div class="progress percent50"><span>50%</span></div>
-                        <strong>Android</strong>
+                        <strong>Capacidad de Liderazgo</strong>
                     </li>
                     <li>
-                        <div class="progress percent25"><span>25%</span></div>
-                        <strong>HTML</strong>
+                        <strong>Responsabilidad</strong>
                     </li>
                     <li>
-                        <div class="progress percent20"><span>20%</span></div>
-                        <strong>JS</strong>
+                        <strong>Iniciativa</strong>
                     </li>
+                    <li>
+                        <strong>Trabajo en equipo</strong>
+                    </li>
+                    <li>
+                        <strong>Resistencia al estrés</strong>
+                    </li>
+
                 </ul>
-                <!-- /skill-bars -->
             </div>
+        </div>
+        <div class="row about-content">
+            <h3>Competencias</h3>
+            <p>
+                Me gusta el desarrollo front-end, sobretodo en móvil. En proceso de aprender desarrollo web, sobretodo con Angular. Tengo algunos de los proyectos con estos lenguajes en la sección de
+                <a href='#portfolio'>Portfolio</phref>.
+                </a>
+                <div class="col-six tab-full">
+                    <h5>Framework</h5>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="progress percent50"><span>Académico</span></div>
+                            <strong>Angular</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent50"><span>Académico</span></div>
+                            <strong>.Net</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"><span>Avanzado</span></div>
+                            <strong>Flutter</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent50"><span>Académico</span></div>
+                            <strong>Android</strong>
+                        </li>
+
+                    </ul>
+                    <h5>IDE</h5>
+                    <ul class="skill-bars">
+                        <li>
+                            <strong>Eclipse</strong>
+                        </li>
+                        <li>
+                            <strong>Visual Studio Code</strong>
+                        </li>
+                        <li>
+                            <strong>Microsoft Visual Studio</strong>
+                        </li>
+                        <li>
+                            <strong>Android Studio</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-six tab-full">
+                    <h5>Lenguajes</h5>
+
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="progress percent75"><span>Avanzado</span></div>
+                            <strong>java</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent50"><span>Académico</span></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent50"><span>Académico</span></div>
+                            <strong>HTML</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent50"><span>Académico</span></div>
+                            <strong>CSS</strong>
+                        </li>
+                    </ul>
+
+                    <h5>Otros</h5>
+                    <ul class="skill-bars">
+                        <li>
+                            <strong>Github</strong>
+                        </li>
+                        <li>
+                            <strong>Firebase</strong>
+                        </li>
+                        <li>
+                            <strong>Oracle VirtualBox</strong>
+                        </li>
+                        <li>
+                            <strong>Prestashop</strong>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <!-- /skill-bars -->
+        </div>
         </div>
         <div class="row button-section">
             <div class="col-twelve">
@@ -386,6 +481,7 @@
 
     <section id="portfolio">
       <div class="row section-intro">
+        <div class="col-twelve">
         <h5>Portfolio</h5>
         <h1>Mis trabajos</h1>
         <p class="lead">
@@ -393,13 +489,13 @@
           largo de mi carrera.
         </p>
       </div>
+    </div>
       <div class="container">
         <!-- 1ª Sección -->
         <section class="rowPort tm-section tm-mb-30">
           <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
             <img
-              src="images/marvelitas.webm"
-              type="video/mp4"
+              src="images/marvelitas.png"
               alt="Marvelitas imagen"
               class="img-fluid"
             />
@@ -458,7 +554,7 @@
                 <div class="tm-flex-center tm-flex-col">
                     <h2 class="tm-align-left">Actüa Asociación</h2>
                     <p class="textPor">
-                        Página web desarrollada para la protectora de Animales de Villanueva de los Infantes, como parte de la asignatura de Comercio Electrónico
+                        Página web desarrollada con Prestashop para la protectora de Animales de Villanueva de los Infantes, como parte de la asignatura de Comercio Electrónico
                     </p>
                     <a href="https://github.com/luciaagarcia/ActuaAnimalista" class="button button-primary"> Ver más</a>
                 </div>

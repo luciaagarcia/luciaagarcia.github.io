@@ -1380,38 +1380,187 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 
-header {
-    position: fixed;
+
+/* ===================================================================
+ * # site header
+ *
+ * ------------------------------------------------------------------- */
+
+.s-header {
+    z-index: 100;
     width: 100%;
-    min-height: 66px;
-    z-index: 600;
+    height: 8.8rem;
+    position: absolute;
+    top: var(--vspace-0_75);
+    left: 0;
 }
 
-header .row {
+.s-header.offset {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.s-header.scrolling {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.s-header.sticky {
+    background-color: var(--color-gray-19);
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.s-header.sticky .s-header__content .btn {
+    --btn-height: calc(var(--vspace-btn) - 1.6rem) !important;
+}
+
+.s-header.sticky .header-nav a {
+    color: rgba(194, 9, 148, 0.6);
+}
+
+.s-header.sticky.scrolling {
+    opacity: 1;
+    visibility: visible;
+    background-color: #535353ea;
+}
+
+.s-header__content {
+    height: 8.8rem;
     position: relative;
-    min-height: 66px;
 }
 
-header .logo {
-    float: left;
-    margin-left: 20px;
-    margin-right: 50px;
-    margin-top: 25px;
-    position: relative;
+
+/* -------------------------------------------------------------------
+ * ## main navigation
+ * ------------------------------------------------------------------- */
+
+.s-header__nav-wrap {
+    padding-left: 21.6rem;
 }
 
-header .logo a {
-    display: block;
+.s-header__nav {
+    list-style: none;
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 6rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
     margin: 0;
-    padding: 0;
-    border: none;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+
+.s-header__nav a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.s-header__nav a:hover,
+.s-header__nav a:focus {
+    color: var(--color_accent) !important;
+}
+
+.s-header__nav li {
+    display: inline-block;
+    padding-left: 0;
+    margin: 0 1rem;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## mobile menu toggle
+ * ------------------------------------------------------------------- */
+
+.s-header__menu-toggle {
+    z-index: 101;
+    display: none;
+    height: 4.2rem;
+    width: 4.2rem;
+    line-height: 4.2rem;
+    font-family: var(--font-2);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: white;
+    outline: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    position: absolute;
+    right: 5.2rem;
+    top: 1.6rem;
+}
+
+.s-header__menu-toggle:hover,
+.s-header__menu-toggle:focus {
+    color: white;
+}
+
+.s-header__menu-toggle span {
+    display: block;
+    width: 2.4rem;
+    height: 2px;
+    background-color: white;
+    -webkit-transition: all .5s;
+    transition: all .5s;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
-    width: 92px;
-    height: 15px;
-    background: url("../images/logo.png") no-repeat center;
-    background-size: 92px 15px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    left: .9rem;
+    right: auto;
+    bottom: auto;
+}
+
+.s-header__menu-toggle span::before,
+.s-header__menu-toggle span::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    position: absolute;
+    left: 0;
+}
+
+.s-header__menu-toggle span::before {
+    top: -.9rem;
+}
+
+.s-header__menu-toggle span::after {
+    bottom: -.9rem;
+}
+
+.s-header__menu-toggle.is-clicked span {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all .1s;
+    transition: all .1s;
+}
+
+.s-header__menu-toggle.is-clicked span::before,
+.s-header__menu-toggle.is-clicked span::after {
+    background-color: white;
+}
+
+.s-header__menu-toggle.is-clicked span::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.s-header__menu-toggle.is-clicked span::after {
+    bottom: 0;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
 }
 
 
@@ -1853,11 +2002,11 @@ header .logo a {
 }
 
 .intro-info img {
-    height: 13rem;
-    width: 13rem;
+    height: 15rem;
+    width: 15rem;
     transform: rotate(-30deg);
     border-radius: 50%;
-    float: left;
+    align-self: center;
 }
 
 .intro-info .lead {
