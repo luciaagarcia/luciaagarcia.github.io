@@ -137,80 +137,55 @@
     /*-----------------------------------------------------*/
     /* Navigation Menu
    ------------------------------------------------------ */
+    var toggleButton = $('.menu-toggle'),
+        nav = $('.main-navigation');
 
-    /* move header
-     * -------------------------------------------------- */
-    const ssMoveHeader = function() {
+    // toggle button
+    toggleButton.on('click', function(e) {
 
-        const $hero = $('.s-hero'),
-            $hdr = $('.s-header'),
-            triggerHeight = $hero.outerHeight() - 170;
+        e.preventDefault();
+        toggleButton.toggleClass('is-clicked');
+        nav.slideToggle();
+
+    });
+
+    // nav items
+    nav.find('li a').on("click", function() {
+
+        // update the toggle button 		
+        toggleButton.toggleClass('is-clicked');
+        // fadeout the navigation panel
+        nav.fadeOut();
+
+    });
+
+    /*---------------------------------------------------- */
+    /* Highlight the current section in the navigation bar
+    ------------------------------------------------------ */
+    var $link = $('.nav-link');
+
+    $link.on('click', function(event) {
+        //event.preventDefault(); // stop normal link function (#)
+        $link.removeClass('active');
+        $(this).addClass('active');
+    });
+
+    //$('.default').trigger('click');
 
 
-        $WIN.on('scroll', function() {
-
-            let loc = $WIN.scrollTop();
-
-            if (loc > triggerHeight) {
-                $hdr.addClass('sticky');
-            } else {
-                $hdr.removeClass('sticky');
+    $(document).ready(function() {
+        $('a[href^="#"]').click(function() {
+            var destino = $(this.hash);
+            if (destino.length == 0) {
+                destino = $('a[name="' + this.hash.substr(1) + '"]');
             }
-
-            if (loc > triggerHeight + 20) {
-                $hdr.addClass('offset');
-            } else {
-                $hdr.removeClass('offset');
+            if (destino.length == 0) {
+                destino = $('html');
             }
-
-            if (loc > triggerHeight + 150) {
-                $hdr.addClass('scrolling');
-            } else {
-                $hdr.removeClass('scrolling');
-            }
-
+            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+            return false;
         });
-
-    };
-
-
-
-    /* mobile menu
-     * ---------------------------------------------------- */
-    const ssMobileMenu = function() {
-
-        const $toggleButton = $('.s-header__menu-toggle');
-        const $headerContent = $('.s-header__content');
-        const $siteBody = $("body");
-
-        $toggleButton.on('click', function(event) {
-            event.preventDefault();
-            $toggleButton.toggleClass('is-clicked');
-            $siteBody.toggleClass('menu-is-open');
-        });
-
-        $headerContent.find('.s-header__nav a, .btn').on("click", function() {
-
-            // at 900px and below
-            if (window.matchMedia('(max-width: 900px)').matches) {
-                $toggleButton.toggleClass('is-clicked');
-                $siteBody.toggleClass('menu-is-open');
-            }
-        });
-
-        $WIN.on('resize', function() {
-
-            // above 900px
-            if (window.matchMedia('(min-width: 901px)').matches) {
-                if ($siteBody.hasClass("menu-is-open")) $siteBody.removeClass("menu-is-open");
-                if ($toggleButton.hasClass("is-clicked")) $toggleButton.removeClass("is-clicked");
-            }
-        });
-
-    };
-
-
-
+    });
     /*---------------------------------------------------- */
     /* Smooth Scrolling
     ------------------------------------------------------ */
@@ -278,7 +253,7 @@
                 error: function() {
 
                     sLoader.fadeOut();
-                    $('#message-warning').html("Algo ha salido mal. Por favor, inténtelo de nuevo.");
+                    $('#message-warning').html("Something went wrong. Please try again.");
                     $('#message-warning').fadeIn();
 
                 }
@@ -297,13 +272,6 @@
     var fadeOutTime = 400; // how slow/fast you want the button to hide
     var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 
-
-    (function ssInit() {
-        ssMoveHeader();
-        ssMobileMenu();
-
-
-    })();
     // Show or hide the sticky footer button
     jQuery(window).scroll(function() {
 

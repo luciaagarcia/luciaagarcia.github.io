@@ -19,6 +19,7 @@
 
     <!-- CSS
    ================================================== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/vendor.css" />
@@ -49,24 +50,34 @@
 <body id="top">
     <!-- header
     ================================================== -->
-    <header class="s-header sticky offset scrolling">
-
-        <div class="s-header__content">
-
-            <nav class="s-header__nav-wrap">
-                <ul class="s-header__nav">
-                    <li><a class="smoothscroll" href="#intro" title="Home">Home</a></li>
-                    <li><a class="smoothscroll" href="#about" title="Sobre mí">Sobre mí</a></li>
-                    <li><a class="smoothscroll" href="#resume" title="Currículum">Currículum</a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="Portfolio">Portfolio</a></li>
-                    <li><a class="smoothscroll" href="#contact" title="Contacto">Contacto</a></li>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <button id="nav-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarDiv">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#resume">Formación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#contact">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-            <!-- end s-header__nav-wrap -->
+            </div>
         </div>
-        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-        <!-- end header-content -->
+    </nav>
+    <!-- Navbar -->
     </header>
     <!-- end s-header -->
     <!-- intro section
@@ -307,7 +318,7 @@
           <h5>Resumen</h5>
           <h1>Más información sobre mí</h1>
           <p class="lead">
-            Aquí podréis encontrar algo de información sobre estudios o distintas tareas que he realizado.
+            Aquí podréis encontrar la información sobre mi formación, tanto académica como laboral.
           </p>
         </div>
       </div>
@@ -382,110 +393,108 @@
                 <p>2016 - Actualidad</p>
               </div>
               <div class="timeline-content">
-                <h4>Universidad de Castilla La Mancha (Ciudad Real)</h4>
-                <p>Intensificación de Tecnologías de la Información</p>
-              </div>
+                <h4><a href="https://www.uclm.es/">Universidad de Castilla La Mancha</a> (ESI UCLM)</h4>
+                <p>Intensificación de Tecnologías de la Información. <br> Puedes consultar el plan de estudio <a href="https://esi.uclm.es/categories/plan-de-estudios">aquí</a></p>
             </div>
-            <div class="timeline-block">
-              <div class="timeline-ico">
+        </div>
+        <div class="timeline-block">
+            <div class="timeline-ico">
                 <i class="fa fa-graduation-cap"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>Curso de Inmersión Lingüística</h3>
+            </div>
+            <div class="timeline-header">
+                <h3><a href="http://www.uimp.es/actividades-academicas/cursos-de-inmersion-en-ingles/curso-para-estudiantes.html">Curso de Inmersión Lingüística</a></h3>
                 <p>2016</p>
-              </div>
-              <div class="timeline-content">
+            </div>
+            <div class="timeline-content">
                 <h4>Universidad Internacional Menéndez Pelayo</h4>
                 <p>
-                  Curso de 30 horas para potenciar las habilidades (sobretodo la
-                  destreza oral) en la lengua inglesa.
+                    Curso de 30 horas para potenciar las habilidades (sobretodo la destreza oral) en la lengua inglesa.
                 </p>
-              </div>
             </div>
-            <!-- /timeline-block -->
-            <div class="timeline-block">
-              <div class="timeline-ico">
+        </div>
+        <!-- /timeline-block -->
+        <div class="timeline-block">
+            <div class="timeline-ico">
                 <i class="fa fa-graduation-cap"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>B1 Preliminary</h3>
+            </div>
+            <div class="timeline-header">
+                <h3><a href="https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/">B1 Preliminary</a></h3>
                 <p>2020</p>
-              </div>
-              <div class="timeline-content">
+            </div>
+            <div class="timeline-content">
                 <h4>Cambridge Assessment</h4>
                 <p>Inglés</p>
-              </div>
             </div>
-            <!-- /timeline-block -->
-          </div>
-          <!-- /timeline-wrap -->
+        </div>
+        <!-- /timeline-block -->
+        </div>
+        <!-- /timeline-wrap -->
         </div>
         <!-- /col-twelve -->
-      </div>
-      <!-- /resume-timeline -->
-
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>Voluntariado</h2>
         </div>
-        <!-- /resume-header -->
+        <!-- /resume-timeline -->
 
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-heart"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>Delegada de centro</h3>
-                <p>2019 - 2020</p>
-              </div>
-              <div class="timeline-content">
-                <h4>Escuela Superior de Informática (UCLM - CR)</h4>
-                <p>
-                  Organización de actividades y resolución de conflictos entre profesores y estudiantes. Esto me ha permitido adquirir capacidades sobretodo de liderazgo, responsabilidad y coordinación, además de trabajar en equipo y adaptarme a situaciones de distinto índole.
-                </p>
-              </div>
+        <div class="row resume-timeline">
+            <div class="col-twelve resume-header">
+                <h2>Voluntariado</h2>
             </div>
-            <!-- /timeline-block -->
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-heart"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>Delegada de curso</h3>
-                <p>2017 - 2020</p>
-              </div>
-              <div class="timeline-content">
-                <h4>Delegación de Alumnos (ESI - CR)</h4>
-                <p>
-                  Representación de los estudiantes de la Escuela Superior de Informática. 
-                </p>
-              </div>
+            <!-- /resume-header -->
+
+            <div class="col-twelve">
+                <div class="timeline-wrap">
+                    <div class="timeline-block">
+                        <div class="timeline-ico">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="timeline-header">
+                            <h3>Delegada de centro</h3>
+                            <p>2019 - 2020</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Escuela Superior de Informática (UCLM - CR)</h4>
+                            <p>
+                                Organización de actividades y resolución de conflictos entre profesores y estudiantes. Esto me ha permitido adquirir capacidades sobretodo de liderazgo, responsabilidad y coordinación, además de trabajar en equipo y adaptarme a situaciones de distinto
+                                índole.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /timeline-block -->
+                    <div class="timeline-block">
+                        <div class="timeline-ico">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="timeline-header">
+                            <h3>Delegada de curso</h3>
+                            <p>2017 - 2020</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Delegación de Alumnos (ESI - CR)</h4>
+                            <p>
+                                Representación de los estudiantes, haciendo de intermediaria a la hora de resolver cualquier problema o resolver dudas ante cualquier situación académica.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /timeline-block -->
+                    <div class="timeline-block">
+                        <div class="timeline-ico">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="timeline-header">
+                            <h3>1ª Semana de Visión por computador</h3>
+                            <p>2017</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>VisiónCR</h4>
+                            <p>
+                                Participación en la organización de las actividades, con la intención de acercar la visión por computador al público general
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /timeline-block -->
+                </div>
+                <!-- /resume-timeline -->
             </div>
-            <!-- /timeline-block -->
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-heart"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>1ª Semana de Visión por computador</h3>
-                <p>2017</p>
-              </div>
-              <div class="timeline-content">
-                <h4>VisiónCR</h4>
-                <p>
-                  Participación en la organización de las actividades, con la
-                  intención de acercar la visión por computador al público
-                  general
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block -->
-          </div>
-          <!-- /resume-timeline -->
         </div>
-      </div>
     </section>
     <!-- /features -->
 
@@ -493,94 +502,88 @@
     ================================================== -->
 
     <section id="portfolio">
-      <div class="row section-intro">
-        <div class="col-twelve">
-        <h5>Portfolio</h5>
-        <h1>Mis trabajos</h1>
-        <p class="lead">
-          Aquí puedes comprobar algunos de los trabajos que he realizado a lo
-          largo de mi carrera.
-        </p>
-      </div>
-    </div>
-      <div class="container">
-        <!-- 1ª Sección -->
-        <section class="rowPort tm-section tm-mb-30">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-            <img
-              src="images/marvelitas.png"
-              alt="Marvelitas imagen"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div class="tm-flex-center p-5">
-              <div class="tm-flex-center tm-flex-col">
-                <h2 class="tm-align-left">Marvelitas</h2>
-                <p class="textPor">
-                  Aplicación móvil desarrollada en Flutter con base de datos y
-                  login gestionados por Firebase.
+        <div class="row section-intro">
+            <div class="col-twelve">
+                <h5>Portfolio</h5>
+                <h1>Mis trabajos</h1>
+                <p class="lead">
+                    Aquí puedes comprobar algunos de los trabajos que he realizado a lo largo de mi carrera.
                 </p>
-                <a href="https://github.com/IsabelDM/Marvelitas" class="button button-primary"> Ver más</a>
             </div>
         </div>
-        </div>
-    </section>
-    <!-- 2ª Sección -->
-    <section class="rowPort tm-section tm-mb-30">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div class="tm-flex-center p-5">
-                <div class="tm-flex-center tm-flex-col">
-                    <h2 class="tm-align-left">Quijotour</h2>
-                    <p class="textPor">
-                        Aplicación de escritorio Windows realizada con java swing en la que se gestionan las rutas de una agencia de viajes
-                    </p>
-                    <a href="https://github.com/luciaagarcia/Quijotour" class="button button-primary"> Ver más</a>
+        <div class="container">
+            <!-- 1ª Sección -->
+            <section class="rowPort tm-section tm-mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+                    <img src="images/marvelitas.png" alt="Marvelitas imagen" class="img-fluid" />
                 </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-            <img src="images/quijotour.webp" alt="Quijotour imagen" class="img-fluid" />
-        </div>
-    </section>
-    <!-- 3ª Sección-->
-    <section class="rowPort tm-section tm-mb-30">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-            <img src="images/WebPersonal.webp" alt="Marvelitas imagen" class="img-fluid" />
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div class="tm-flex-center p-5">
-                <div class="tm-flex-center tm-flex-col">
-                    <h2 class="tm-align-left">Web personal</h2>
-                    <p class="textPor">
-                        Proyecto de desarrollo web implementado con html y css a modo de marca personal.
-                    </p>
-                    <a href="https://github.com/luciaagarcia/luciaagarcia.github.io" class="button button-primary"> Ver más</a>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="tm-flex-center p-5">
+                        <div class="tm-flex-center tm-flex-col">
+                            <h2 class="tm-align-left">Marvelitas</h2>
+                            <p class="textPor">
+                                Aplicación móvil desarrollada en Flutter con base de datos y login gestionados por Firebase.
+                            </p>
+                            <a href="https://github.com/IsabelDM/Marvelitas" class="button button-primary"> Ver más</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- 4ª Sección-->
-    <section class="rowPort tm-section tm-mb-30">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div class="tm-flex-center p-5">
-                <div class="tm-flex-center tm-flex-col">
-                    <h2 class="tm-align-left">Actüa Asociación</h2>
-                    <p class="textPor">
-                        Página web desarrollada con Prestashop para la protectora de Animales de Villanueva de los Infantes, como parte de la asignatura de Comercio Electrónico
-                    </p>
-                    <a href="https://github.com/luciaagarcia/ActuaAnimalista" class="button button-primary"> Ver más</a>
+            </section>
+            <!-- 2ª Sección -->
+            <section class="rowPort tm-section tm-mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="tm-flex-center p-5">
+                        <div class="tm-flex-center tm-flex-col">
+                            <h2 class="tm-align-left">Quijotour</h2>
+                            <p class="textPor">
+                                Aplicación de escritorio Windows realizada con java swing en la que se gestionan las rutas de una agencia de viajes
+                            </p>
+                            <a href="https://github.com/luciaagarcia/Quijotour" class="button button-primary"> Ver más</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+                    <img src="images/quijotour.webp" alt="Quijotour imagen" class="img-fluid" />
+                </div>
+            </section>
+            <!-- 3ª Sección-->
+            <section class="rowPort tm-section tm-mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+                    <img src="images/WebPersonal.webp" alt="Marvelitas imagen" class="img-fluid" />
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="tm-flex-center p-5">
+                        <div class="tm-flex-center tm-flex-col">
+                            <h2 class="tm-align-left">Web personal</h2>
+                            <p class="textPor">
+                                Proyecto de desarrollo web implementado con html y css a modo de marca personal.
+                            </p>
+                            <a href="https://github.com/luciaagarcia/luciaagarcia.github.io" class="button button-primary"> Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 4ª Sección-->
+            <section class="rowPort tm-section tm-mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="tm-flex-center p-5">
+                        <div class="tm-flex-center tm-flex-col">
+                            <h2 class="tm-align-left">Actüa Asociación</h2>
+                            <p class="textPor">
+                                Página web desarrollada con Prestashop para la protectora de Animales de Villanueva de los Infantes, como parte de la asignatura de Comercio Electrónico
+                            </p>
+                            <a href="https://github.com/luciaagarcia/ActuaAnimalista" class="button button-primary"> Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+                    <picture>
+                        <img src="images/ActuaAsociacion.webp" alt="Quijotour imagen" class="img-fluid" />
+                    </picture>
+                </div>
+            </section>
+            <!-- Fin del portfolio -->
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-            <picture>
-                <img src="images/ActuaAsociacion.webp" alt="Quijotour imagen" class="img-fluid" />
-            </picture>
-        </div>
-    </section>
-    <!-- Fin del portfolio -->
-    </div>
     </section>
 
     <!-- contact
@@ -655,13 +658,11 @@
                 </p>
             </div>
 
-            <div class="col-four tab-full collapse">
+            <div class="col-four tab-full ">
                 <div class="icon">
                     <i class="icon-mail"></i>
                 </div>
-
                 <h5>Mi e-mail</h5>
-
                 <p>lucia.crista.97@gmail.com</p>
             </div>
 
