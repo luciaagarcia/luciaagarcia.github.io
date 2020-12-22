@@ -1763,6 +1763,12 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 
+#about2 {
+    background: rgba(160, 159, 159, 0.1);
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+}
+
 #about {
     background: #ffffff;
     padding-top: 12rem;
