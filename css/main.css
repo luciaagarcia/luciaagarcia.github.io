@@ -1190,7 +1190,6 @@ input::-moz-focus-inner {
 
 .skill-bars li .progress {
     background: #313131;
-    position: relative;
     height: 100%;
 }
 
@@ -1215,7 +1214,7 @@ input::-moz-focus-inner {
     margin-left: -5px;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
-    border-top: 5px solid #313131;
+    /*border-top: 5px solid #313131;*/
     content: "";
 }
 
@@ -1772,7 +1771,6 @@ input::-moz-focus-inner {
 #about {
     background: #ffffff;
     padding-top: 12rem;
-    padding-bottom: 15rem;
 }
 
 #about .section-intro {
@@ -3053,6 +3051,7 @@ input::-moz-focus-inner {
 
 .contact-form {
     max-width: 740px;
+    justify-content: center;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -3329,6 +3328,11 @@ footer {
     padding-bottom: 3rem;
     font-size: 1.4rem;
     font-family: "poppins-regular", sans-serif;
+    background: #151515;
+}
+
+#linkfooter {
+    color: #6e6e6e;
 }
 
 footer a,
@@ -3346,7 +3350,8 @@ footer .row {
 }
 
 footer .social {
-    text-align: right;
+    text-align: center;
+    width: 100%;
 }
 
 footer .footer-social {
